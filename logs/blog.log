@@ -1,0 +1,2166 @@
+INFO 2020-06-09 12:59:58,709 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 13:00:00,658 basehttp 154 "GET / HTTP/1.1" 200 4
+WARNING 2020-06-09 13:00:00,813 log 228 Not Found: /favicon.ico
+WARNING 2020-06-09 13:00:00,815 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2070
+INFO 2020-06-09 13:07:45,725 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 13:07:46,924 urls 26 info
+INFO 2020-06-09 13:07:46,929 basehttp 154 "GET / HTTP/1.1" 200 4
+INFO 2020-06-09 13:09:45,598 autoreload 203 D:\python_pycharm\blog\blog\settings.py changed, reloading.
+INFO 2020-06-09 13:09:46,521 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 13:11:58,072 autoreload 203 D:\python_pycharm\blog\blog\settings.py changed, reloading.
+INFO 2020-06-09 13:11:59,093 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 13:36:47,989 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 13:37:20,183 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 13:39:01,516 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 13:39:02,961 urls 26 info
+INFO 2020-06-09 13:39:02,976 basehttp 154 "GET / HTTP/1.1" 200 4
+INFO 2020-06-09 13:39:12,650 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5306
+WARNING 2020-06-09 13:39:12,702 log 228 Not Found: /user/register/js/host.js
+WARNING 2020-06-09 13:39:12,703 basehttp 154 "GET /user/register/js/host.js HTTP/1.1" 404 2287
+INFO 2020-06-09 13:39:12,717 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140942
+WARNING 2020-06-09 13:39:12,720 log 228 Not Found: /user/register/js/common.js
+INFO 2020-06-09 13:39:12,721 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2020-06-09 13:39:12,721 basehttp 154 "GET /static/img/image_code.png HTTP/1.1" 200 3483
+INFO 2020-06-09 13:39:12,721 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+WARNING 2020-06-09 13:39:12,723 basehttp 154 "GET /user/register/js/common.js HTTP/1.1" 404 2293
+WARNING 2020-06-09 13:39:12,883 log 228 Not Found: /user/register/js/register.js
+WARNING 2020-06-09 13:39:12,889 log 228 Not Found: /user/register/js/host.js
+WARNING 2020-06-09 13:39:12,890 basehttp 154 "GET /user/register/js/register.js HTTP/1.1" 404 2299
+WARNING 2020-06-09 13:39:12,892 basehttp 154 "GET /user/register/js/host.js HTTP/1.1" 404 2287
+WARNING 2020-06-09 13:39:12,911 log 228 Not Found: /user/register/js/common.js
+WARNING 2020-06-09 13:39:12,918 basehttp 154 "GET /user/register/js/common.js HTTP/1.1" 404 2293
+WARNING 2020-06-09 13:39:12,926 log 228 Not Found: /user/register/js/register.js
+WARNING 2020-06-09 13:39:12,927 basehttp 154 "GET /user/register/js/register.js HTTP/1.1" 404 2299
+INFO 2020-06-09 13:40:58,556 autoreload 203 D:\python_pycharm\blog\blog\urls.py changed, reloading.
+INFO 2020-06-09 13:40:59,500 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 13:41:16,680 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-09 13:41:21,135 log 228 Internal Server Error: /user/register/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\user\views.py", line 11, in get
+    return render(requests, 'register.html')
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\templatetags\static.py", line 159, in do_static
+    return StaticNode.handle_token(parser, token)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\templatetags\static.py", line 133, in handle_token
+    path = parser.compile_filter(bits[1])
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''js/common.js"' from ''js/common.js"'
+ERROR 2020-06-09 13:41:21,139 basehttp 154 "GET /user/register/ HTTP/1.1" 500 161327
+INFO 2020-06-09 13:41:41,754 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5330
+INFO 2020-06-09 13:41:41,797 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2020-06-09 13:41:41,808 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2020-06-09 13:43:12,936 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5335
+INFO 2020-06-09 13:43:22,104 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5331
+INFO 2020-06-09 13:52:39,833 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-09 13:52:40,663 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 13:56:00,644 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 14:25:22,728 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-06-09 14:25:23,998 log 228 Not Found: /
+WARNING 2020-06-09 14:25:24,000 basehttp 154 "GET / HTTP/1.1" 404 2024
+INFO 2020-06-09 14:25:35,716 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5332
+INFO 2020-06-09 14:25:36,565 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5332
+WARNING 2020-06-09 14:27:06,888 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1672
+INFO 2020-06-09 14:27:06,930 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 562427
+INFO 2020-06-09 14:29:39,763 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-09 14:47:01,928 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 14:47:32,653 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-06-09 14:47:34,813 log 228 Not Found: /
+WARNING 2020-06-09 14:47:34,814 basehttp 154 "GET / HTTP/1.1" 404 2024
+INFO 2020-06-09 14:47:36,541 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5321
+WARNING 2020-06-09 14:47:36,760 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1672
+INFO 2020-06-09 14:47:43,066 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5321
+WARNING 2020-06-09 14:48:51,227 log 228 Bad Request: /user/imagecode/
+WARNING 2020-06-09 14:48:51,230 basehttp 154 "GET /user/imagecode/ HTTP/1.1" 400 17
+INFO 2020-06-09 14:49:07,106 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-09 14:49:08,072 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-09 14:49:17,636 log 228 Internal Server Error: /user/imagecode/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\user\views.py", line 27, in get
+    text, image = captcha.generate_captcha()
+AttributeError: module 'libs.captcha.captcha' has no attribute 'generate_captcha'
+ERROR 2020-06-09 14:49:17,638 basehttp 154 "GET /user/imagecode/?uuuid=123 HTTP/1.1" 500 79260
+INFO 2020-06-09 14:49:24,205 basehttp 154 "GET /user/imagecode?uuuid=123 HTTP/1.1" 301 0
+ERROR 2020-06-09 14:49:24,257 log 228 Internal Server Error: /user/imagecode/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\user\views.py", line 27, in get
+    text, image = captcha.generate_captcha()
+AttributeError: module 'libs.captcha.captcha' has no attribute 'generate_captcha'
+ERROR 2020-06-09 14:49:24,260 basehttp 154 "GET /user/imagecode/?uuuid=123 HTTP/1.1" 500 79260
+INFO 2020-06-09 14:49:58,744 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-09 14:49:59,608 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-09 14:50:04,380 log 228 Internal Server Error: /user/imagecode/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\user\views.py", line 27, in get
+    text, image = captcha.generate_captcha()
+AttributeError: module 'libs.captcha.captcha' has no attribute 'generate_captcha'
+ERROR 2020-06-09 14:50:04,382 basehttp 154 "GET /user/imagecode/?uuid=123 HTTP/1.1" 500 79248
+INFO 2020-06-09 14:51:39,516 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-09 14:51:40,356 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-09 14:53:36,086 log 228 Internal Server Error: /user/imagecode/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\user\views.py", line 23, in get
+    if uuuid is None:
+NameError: name 'uuuid' is not defined
+ERROR 2020-06-09 14:53:36,089 basehttp 154 "GET /user/imagecode/?uuid=123 HTTP/1.1" 500 79099
+ERROR 2020-06-09 14:53:48,116 log 228 Internal Server Error: /user/imagecode/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\user\views.py", line 23, in get
+    if uuid is None:
+NameError: name 'uuuid' is not defined
+ERROR 2020-06-09 14:53:48,118 basehttp 154 "GET /user/imagecode/?uuid=123 HTTP/1.1" 500 79097
+ERROR 2020-06-09 14:54:08,097 log 228 Internal Server Error: /user/imagecode/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\user\views.py", line 23, in get
+    return HttpResponseBadRequest("没有传递uuid")
+NameError: name 'uuuid' is not defined
+ERROR 2020-06-09 14:54:08,099 basehttp 154 "GET /user/imagecode/?uuid=123 HTTP/1.1" 500 79157
+INFO 2020-06-09 14:54:22,507 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-09 14:54:23,309 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 14:54:25,791 basehttp 154 "GET /user/imagecode/?uuid=123 HTTP/1.1" 200 3565
+INFO 2020-06-09 14:54:33,484 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5321
+INFO 2020-06-09 14:57:05,291 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5321
+INFO 2020-06-09 14:57:06,065 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5321
+INFO 2020-06-09 14:59:34,890 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5325
+INFO 2020-06-09 14:59:36,129 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5325
+INFO 2020-06-09 14:59:36,884 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5325
+INFO 2020-06-09 14:59:37,618 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5325
+WARNING 2020-06-09 14:59:47,218 log 228 Not Found: /favicon.ico
+WARNING 2020-06-09 14:59:47,219 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2075
+WARNING 2020-06-09 14:59:47,815 log 228 Not Found: /favicon.ico
+WARNING 2020-06-09 14:59:47,817 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2075
+INFO 2020-06-09 14:59:48,235 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5325
+INFO 2020-06-09 14:59:48,399 basehttp 154 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140942
+INFO 2020-06-09 14:59:48,401 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2020-06-09 14:59:48,411 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2020-06-09 14:59:48,424 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 35
+INFO 2020-06-09 14:59:48,426 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2020-06-09 14:59:48,427 basehttp 154 "GET /static/js/register.js HTTP/1.1" 200 6407
+WARNING 2020-06-09 14:59:48,608 log 228 Not Found: /imagecode/
+WARNING 2020-06-09 14:59:48,610 basehttp 154 "GET /imagecode/?uuid=fe05d83d-2686-4463-9629-f9bcb421f04a HTTP/1.1" 404 2114
+WARNING 2020-06-09 14:59:48,695 log 228 Not Found: /favicon.ico
+WARNING 2020-06-09 14:59:48,696 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2075
+WARNING 2020-06-09 14:59:50,171 log 228 Not Found: /imagecode/
+WARNING 2020-06-09 14:59:50,171 basehttp 154 "GET /imagecode/?uuid=f31bb94d-92ea-4b32-9f64-4ec00c7b8fb2 HTTP/1.1" 404 2114
+WARNING 2020-06-09 14:59:50,892 log 228 Not Found: /imagecode/
+WARNING 2020-06-09 14:59:50,892 basehttp 154 "GET /imagecode/?uuid=b7a5bda7-7018-4d1d-82f9-c4792ebbec5a HTTP/1.1" 404 2114
+INFO 2020-06-09 14:59:52,522 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5325
+WARNING 2020-06-09 14:59:52,628 log 228 Not Found: /imagecode/
+WARNING 2020-06-09 14:59:52,630 basehttp 154 "GET /imagecode/?uuid=e61d7398-d2b4-4bbb-99c0-4f3b7d62ce85 HTTP/1.1" 404 2114
+INFO 2020-06-09 15:00:17,250 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5324
+INFO 2020-06-09 15:02:55,685 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5324
+INFO 2020-06-09 15:02:57,180 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5324
+INFO 2020-06-09 15:02:58,416 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5324
+INFO 2020-06-09 15:04:00,705 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5319
+INFO 2020-06-09 15:04:02,186 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5319
+INFO 2020-06-09 15:04:03,170 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5319
+INFO 2020-06-09 15:04:03,966 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5319
+INFO 2020-06-09 15:04:04,148 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5319
+INFO 2020-06-09 15:04:04,334 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5319
+INFO 2020-06-09 15:04:04,515 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5319
+INFO 2020-06-09 15:04:04,686 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5319
+INFO 2020-06-09 15:04:04,901 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5319
+INFO 2020-06-09 16:01:04,231 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-06-09 16:01:05,973 log 228 Not Found: /
+WARNING 2020-06-09 16:01:05,988 basehttp 154 "GET / HTTP/1.1" 404 2191
+INFO 2020-06-09 16:01:13,534 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5324
+INFO 2020-06-09 16:05:53,771 autoreload 203 D:\python_pycharm\blog\home\urls.py changed, reloading.
+INFO 2020-06-09 16:05:54,637 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 16:05:55,094 basehttp 154 "GET / HTTP/1.1" 200 10
+INFO 2020-06-09 16:06:55,101 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-09 16:06:56,001 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 16:06:56,250 basehttp 154 "GET / HTTP/1.1" 200 11726
+WARNING 2020-06-09 16:06:56,284 log 228 Not Found: /bootstrap/css/bootstrap.min.css
+WARNING 2020-06-09 16:06:56,288 basehttp 154 "GET /bootstrap/css/bootstrap.min.css HTTP/1.1" 404 2296
+WARNING 2020-06-09 16:06:56,316 log 228 Not Found: /md_css/monokai.css
+WARNING 2020-06-09 16:06:56,318 log 228 Not Found: /js/axios-0.18.0.min.js
+WARNING 2020-06-09 16:06:56,319 log 228 Not Found: /common/common.css
+WARNING 2020-06-09 16:06:56,320 basehttp 154 "GET /md_css/monokai.css HTTP/1.1" 404 2257
+WARNING 2020-06-09 16:06:56,323 basehttp 154 "GET /common/common.css HTTP/1.1" 404 2254
+WARNING 2020-06-09 16:06:56,326 log 228 Not Found: /common/jquery.pagination.css
+WARNING 2020-06-09 16:06:56,326 basehttp 154 "GET /js/axios-0.18.0.min.js HTTP/1.1" 404 2269
+WARNING 2020-06-09 16:06:56,329 log 228 Not Found: /js/vue-2.5.16.js
+WARNING 2020-06-09 16:06:56,335 basehttp 154 "GET /common/jquery.pagination.css HTTP/1.1" 404 2287
+WARNING 2020-06-09 16:06:56,339 basehttp 154 "GET /js/vue-2.5.16.js HTTP/1.1" 404 2251
+WARNING 2020-06-09 16:06:56,347 log 228 Not Found: /js/jquery-1.12.4.min.js
+WARNING 2020-06-09 16:06:56,349 log 228 Not Found: /js/host.js
+WARNING 2020-06-09 16:06:56,350 basehttp 154 "GET /js/jquery-1.12.4.min.js HTTP/1.1" 404 2272
+WARNING 2020-06-09 16:06:56,355 log 228 Not Found: /img/1.jpg
+WARNING 2020-06-09 16:06:56,356 basehttp 154 "GET /js/host.js HTTP/1.1" 404 2233
+WARNING 2020-06-09 16:06:56,356 basehttp 154 "GET /img/1.jpg HTTP/1.1" 404 2230
+WARNING 2020-06-09 16:06:56,375 log 228 Not Found: /js/common.js
+WARNING 2020-06-09 16:06:56,375 log 228 Not Found: /js/index.js
+WARNING 2020-06-09 16:06:56,376 basehttp 154 "GET /js/common.js HTTP/1.1" 404 2239
+WARNING 2020-06-09 16:06:56,377 basehttp 154 "GET /js/index.js HTTP/1.1" 404 2236
+WARNING 2020-06-09 16:06:56,387 log 228 Not Found: /js/jquery.pagination.min.js
+WARNING 2020-06-09 16:06:56,389 basehttp 154 "GET /js/jquery.pagination.min.js HTTP/1.1" 404 2284
+WARNING 2020-06-09 16:06:57,502 log 228 Not Found: /js/axios-0.18.0.min.js
+WARNING 2020-06-09 16:06:57,504 basehttp 154 "GET /js/axios-0.18.0.min.js HTTP/1.1" 404 2269
+WARNING 2020-06-09 16:06:57,515 log 228 Not Found: /js/jquery-1.12.4.min.js
+WARNING 2020-06-09 16:06:57,516 basehttp 154 "GET /js/jquery-1.12.4.min.js HTTP/1.1" 404 2272
+WARNING 2020-06-09 16:06:57,539 log 228 Not Found: /img/1.jpg
+WARNING 2020-06-09 16:06:57,540 basehttp 154 "GET /img/1.jpg HTTP/1.1" 404 2230
+WARNING 2020-06-09 16:06:57,585 log 228 Not Found: /js/host.js
+WARNING 2020-06-09 16:06:57,587 basehttp 154 "GET /js/host.js HTTP/1.1" 404 2233
+WARNING 2020-06-09 16:06:57,600 log 228 Not Found: /js/common.js
+WARNING 2020-06-09 16:06:57,603 basehttp 154 "GET /js/common.js HTTP/1.1" 404 2239
+WARNING 2020-06-09 16:06:57,621 log 228 Not Found: /js/index.js
+WARNING 2020-06-09 16:06:57,624 basehttp 154 "GET /js/index.js HTTP/1.1" 404 2236
+WARNING 2020-06-09 16:06:57,644 log 228 Not Found: /js/jquery.pagination.min.js
+WARNING 2020-06-09 16:06:57,645 basehttp 154 "GET /js/jquery.pagination.min.js HTTP/1.1" 404 2284
+INFO 2020-06-09 16:11:25,795 basehttp 154 "GET / HTTP/1.1" 200 11855
+INFO 2020-06-09 16:11:25,846 basehttp 154 "GET /static/md_css/monokai.css HTTP/1.1" 200 4118
+INFO 2020-06-09 16:11:25,854 basehttp 154 "GET /static/common/common.css HTTP/1.1" 200 381
+INFO 2020-06-09 16:11:25,856 basehttp 154 "GET /static/common/jquery.pagination.css HTTP/1.1" 200 523
+INFO 2020-06-09 16:11:25,857 basehttp 154 "GET /static/img/1.jpg HTTP/1.1" 200 78682
+INFO 2020-06-09 16:11:25,888 basehttp 154 "GET /static/js/index.js HTTP/1.1" 200 530
+INFO 2020-06-09 16:11:25,979 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 200 2935
+WARNING 2020-06-09 16:11:37,029 log 228 Not Found: /detail.html
+WARNING 2020-06-09 16:11:37,030 basehttp 154 "GET /detail.html HTTP/1.1" 404 2236
+INFO 2020-06-09 16:20:57,613 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-09 16:20:58,491 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 16:22:49,168 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 16:22:50,308 basehttp 154 "GET / HTTP/1.1" 200 11855
+INFO 2020-06-09 16:22:58,124 basehttp 154 "GET /user/register/ HTTP/1.1" 200 5324
+INFO 2020-06-09 16:24:46,333 autoreload 203 D:\python_pycharm\blog\user\urls.py changed, reloading.
+INFO 2020-06-09 16:24:47,256 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-09 16:27:01,054 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-09 16:27:01,940 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-06-09 16:28:54,404 log 228 Not Found: /user/register/
+WARNING 2020-06-09 16:28:54,404 basehttp 154 "GET /user/register/ HTTP/1.1" 404 2659
+INFO 2020-06-09 16:29:16,494 basehttp 154 "GET /register/ HTTP/1.1" 200 5324
+INFO 2020-06-10 13:03:50,989 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 13:03:54,418 basehttp 154 "GET / HTTP/1.1" 200 11855
+WARNING 2020-06-10 13:03:55,295 log 228 Not Found: /favicon.ico
+WARNING 2020-06-10 13:03:55,296 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2650
+INFO 2020-06-10 13:10:20,641 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 13:10:21,057 basehttp 154 "GET /admin/ HTTP/1.1" 302 0
+INFO 2020-06-10 13:10:23,343 basehttp 154 "GET /admin/ HTTP/1.1" 302 0
+INFO 2020-06-10 13:10:24,395 basehttp 154 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1821
+INFO 2020-06-10 13:10:24,453 basehttp 154 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:24,453 basehttp 154 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:24,453 basehttp 154 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:24,476 basehttp 154 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:24,542 basehttp 154 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:24,543 basehttp 154 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:35,632 basehttp 154 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2020-06-10 13:10:35,688 basehttp 154 "GET /admin/ HTTP/1.1" 200 2582
+INFO 2020-06-10 13:10:35,723 basehttp 154 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:35,733 basehttp 154 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:35,734 basehttp 154 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:35,735 basehttp 154 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:40,118 basehttp 154 "GET /admin/auth/group/add/ HTTP/1.1" 200 6859
+INFO 2020-06-10 13:10:40,156 basehttp 154 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:40,157 basehttp 154 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:40,199 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-06-10 13:10:40,208 basehttp 154 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:40,208 basehttp 154 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:40,211 basehttp 154 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12322
+INFO 2020-06-10 13:10:40,219 basehttp 154 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:40,241 basehttp 154 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 5755
+INFO 2020-06-10 13:10:40,298 basehttp 154 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:40,298 basehttp 154 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:40,298 basehttp 154 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:40,312 basehttp 154 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:40,312 basehttp 154 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:40,313 basehttp 154 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:40,354 basehttp 154 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2020-06-10 13:10:40,466 basehttp 154 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2020-06-10 13:10:40,466 basehttp 154 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2020-06-10 13:10:40,469 basehttp 154 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2020-06-10 13:10:40,479 basehttp 154 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2020-06-10 13:10:47,892 basehttp 154 "GET /admin/ HTTP/1.1" 200 2582
+INFO 2020-06-10 13:11:56,582 autoreload 203 D:\python_pycharm\blog\home\admin.py changed, reloading.
+INFO 2020-06-10 13:11:57,565 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 13:11:57,962 basehttp 154 "GET /admin/ HTTP/1.1" 200 3296
+INFO 2020-06-10 13:12:38,147 basehttp 154 "GET /admin/ HTTP/1.1" 200 3296
+INFO 2020-06-10 13:12:39,543 basehttp 154 "GET /admin/ HTTP/1.1" 200 3296
+INFO 2020-06-10 13:12:40,138 basehttp 154 "GET /admin/ HTTP/1.1" 200 3296
+INFO 2020-06-10 13:12:40,641 basehttp 154 "GET /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2020-06-10 13:12:40,677 basehttp 154 "GET /admin/ HTTP/1.1" 200 3296
+INFO 2020-06-10 13:12:41,908 basehttp 154 "GET /admin/ HTTP/1.1" 200 3296
+INFO 2020-06-10 13:12:42,512 basehttp 154 "GET /admin/ HTTP/1.1" 200 3296
+INFO 2020-06-10 13:13:08,400 autoreload 203 D:\python_pycharm\blog\home\models.py changed, reloading.
+INFO 2020-06-10 13:13:09,238 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 13:13:09,799 basehttp 154 "GET /admin/ HTTP/1.1" 200 3291
+INFO 2020-06-10 13:13:22,725 autoreload 203 D:\python_pycharm\blog\home\models.py changed, reloading.
+INFO 2020-06-10 13:13:23,522 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-10 13:13:24,245 log 228 Internal Server Error: /admin/home/articlecategory/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'blog.tb_category' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\options.py", line 1672, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\options.py", line 744, in get_changelist_instance
+    sortable_by,
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\views\main.py", line 82, in __init__
+    self.get_results(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\views\main.py", line 210, in get_results
+    result_count = paginator.count
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\paginator.py", line 91, in count
+    return c()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\query.py", line 392, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\query.py", line 504, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\query.py", line 489, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\compiler.py", line 1097, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'blog.tb_category' doesn't exist")
+ERROR 2020-06-10 13:13:24,253 basehttp 154 "GET /admin/home/articlecategory/ HTTP/1.1" 500 243918
+INFO 2020-06-10 13:13:26,312 basehttp 154 "GET /admin/ HTTP/1.1" 200 3291
+INFO 2020-06-10 13:13:27,565 basehttp 154 "GET /admin/home/articlecategory/add/ HTTP/1.1" 200 5034
+INFO 2020-06-10 13:13:27,624 basehttp 154 "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+INFO 2020-06-10 13:13:27,647 basehttp 154 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20274
+INFO 2020-06-10 13:13:27,653 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-06-10 13:13:27,811 basehttp 154 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2020-06-10 13:13:27,811 basehttp 154 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+ERROR 2020-06-10 13:13:47,126 log 228 Internal Server Error: /admin/home/articlecategory/add/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'blog.tb_category' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\options.py", line 1088, in save_model
+    obj.save()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'blog.tb_category' doesn't exist")
+ERROR 2020-06-10 13:13:47,132 basehttp 154 "POST /admin/home/articlecategory/add/ HTTP/1.1" 500 257003
+INFO 2020-06-10 13:13:50,277 basehttp 154 "GET /admin/home/articlecategory/add/ HTTP/1.1" 200 5034
+ERROR 2020-06-10 13:13:55,916 log 228 Internal Server Error: /admin/home/articlecategory/add/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'blog.tb_category' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\admin\options.py", line 1088, in save_model
+    obj.save()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'blog.tb_category' doesn't exist")
+ERROR 2020-06-10 13:13:55,921 basehttp 154 "POST /admin/home/articlecategory/add/ HTTP/1.1" 500 256980
+INFO 2020-06-10 13:18:40,435 autoreload 203 D:\python_pycharm\blog\home\models.py changed, reloading.
+INFO 2020-06-10 13:18:41,218 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 13:18:52,290 autoreload 203 D:\python_pycharm\blog\home\models.py changed, reloading.
+INFO 2020-06-10 13:18:53,118 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 13:18:56,678 basehttp 154 "GET /admin/home/articlecategory/add/ HTTP/1.1" 200 5034
+INFO 2020-06-10 13:18:58,498 basehttp 154 "POST /admin/home/articlecategory/add/ HTTP/1.1" 302 0
+INFO 2020-06-10 13:18:58,646 basehttp 154 "GET /admin/home/articlecategory/ HTTP/1.1" 200 4580
+INFO 2020-06-10 13:18:58,683 basehttp 154 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2020-06-10 13:18:58,688 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-06-10 13:18:58,719 basehttp 154 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2020-06-10 13:18:58,719 basehttp 154 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2020-06-10 13:19:01,237 basehttp 154 "GET /admin/home/articlecategory/add/ HTTP/1.1" 200 5034
+INFO 2020-06-10 13:19:01,267 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-06-10 13:19:05,368 basehttp 154 "POST /admin/home/articlecategory/add/ HTTP/1.1" 302 0
+INFO 2020-06-10 13:19:05,457 basehttp 154 "GET /admin/home/articlecategory/ HTTP/1.1" 200 4802
+INFO 2020-06-10 13:19:05,484 basehttp 154 "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-06-10 13:43:14,284 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 13:44:27,677 autoreload 203 D:\python_pycharm\blog\home\models.py changed, reloading.
+INFO 2020-06-10 13:44:28,470 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 13:44:30,603 basehttp 154 "GET / HTTP/1.1" 200 11855
+INFO 2020-06-10 13:49:08,026 autoreload 203 D:\python_pycharm\blog\home\urls.py changed, reloading.
+INFO 2020-06-10 13:49:08,904 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 14:02:03,859 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 14:02:48,078 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 14:02:49,598 basehttp 154 "GET / HTTP/1.1" 200 11855
+WARNING 2020-06-10 14:02:59,026 log 228 Not Found: /user/register/
+WARNING 2020-06-10 14:02:59,027 basehttp 154 "GET /user/register/ HTTP/1.1" 404 2659
+INFO 2020-06-10 14:03:06,845 basehttp 154 "GET /register/ HTTP/1.1" 200 5324
+INFO 2020-06-10 14:29:11,882 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 14:29:13,193 basehttp 154 "GET / HTTP/1.1" 200 11855
+INFO 2020-06-10 14:29:18,831 basehttp 154 "GET /register/ HTTP/1.1" 200 3697
+ERROR 2020-06-10 14:29:37,534 log 228 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\user\views.py", line 50, in post
+    password=password)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\auth\models.py", line 151, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\auth\models.py", line 143, in _create_user
+    user = self.model(username=username, email=email, **extra_fields)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\base.py", line 501, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: User() got an unexpected keyword argument 'mobile'
+ERROR 2020-06-10 14:29:37,537 basehttp 154 "POST /register/ HTTP/1.1" 500 96326
+ERROR 2020-06-10 14:31:05,976 log 228 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\user\views.py", line 50, in post
+    password=password)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\auth\models.py", line 151, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\contrib\auth\models.py", line 143, in _create_user
+    user = self.model(username=username, email=email, **extra_fields)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\base.py", line 501, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: User() got an unexpected keyword argument 'mobile'
+ERROR 2020-06-10 14:31:05,980 basehttp 154 "POST /register/ HTTP/1.1" 500 96326
+INFO 2020-06-10 14:31:59,327 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-10 14:32:00,453 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 14:32:01,140 basehttp 154 "POST /register/ HTTP/1.1" 302 0
+INFO 2020-06-10 14:32:01,159 basehttp 154 "GET / HTTP/1.1" 200 11855
+INFO 2020-06-10 14:34:27,287 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 14:34:28,241 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-10 14:34:36,330 log 228 Internal Server Error: /write/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 20, in get
+    categories = ArticleCategory.object.all()
+AttributeError: type object 'ArticleCategory' has no attribute 'object'
+ERROR 2020-06-10 14:34:36,332 basehttp 154 "GET /write/ HTTP/1.1" 500 79006
+INFO 2020-06-10 14:37:20,480 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 14:37:21,389 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 14:37:21,645 basehttp 154 "GET /write/ HTTP/1.1" 200 5809
+INFO 2020-06-10 14:37:21,711 basehttp 154 "GET /static/js/write_blog.js HTTP/1.1" 200 521
+INFO 2020-06-10 14:37:21,763 basehttp 154 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 2039
+INFO 2020-06-10 14:37:22,362 basehttp 154 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 690627
+WARNING 2020-06-10 14:37:22,990 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:37:22,991 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:37:23,008 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:37:23,011 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:37:23,012 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+WARNING 2020-06-10 14:37:23,012 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+INFO 2020-06-10 14:40:48,551 basehttp 154 "GET /write/ HTTP/1.1" 200 5806
+WARNING 2020-06-10 14:40:48,751 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:40:48,752 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:40:48,772 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:40:48,774 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:40:48,774 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+WARNING 2020-06-10 14:40:48,775 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+INFO 2020-06-10 14:40:50,177 basehttp 154 "GET /write/ HTTP/1.1" 200 5806
+WARNING 2020-06-10 14:40:50,325 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:40:50,326 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:40:50,347 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:40:50,351 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:40:50,352 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+WARNING 2020-06-10 14:40:50,352 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+ERROR 2020-06-10 14:44:35,032 log 228 Internal Server Error: /write/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 25, in get
+    return render(reuqest, 'write_blog.html', context=context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' type in types' from 'for type in types'
+ERROR 2020-06-10 14:44:35,038 basehttp 154 "GET /write/ HTTP/1.1" 500 158498
+ERROR 2020-06-10 14:46:17,469 log 228 Internal Server Error: /write/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 25, in get
+    'types': types
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' type in types' from 'for type in types'
+ERROR 2020-06-10 14:46:17,472 basehttp 154 "GET /write/ HTTP/1.1" 500 158431
+INFO 2020-06-10 14:46:53,998 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 14:46:55,082 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-10 14:46:55,647 log 228 Internal Server Error: /write/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 27, in get
+    return render(reuqest, 'write_blog.html', context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' type in types' from 'for type in types'
+ERROR 2020-06-10 14:46:55,652 basehttp 154 "GET /write/ HTTP/1.1" 500 159076
+INFO 2020-06-10 14:47:03,272 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 14:47:04,511 basehttp 154 "GET / HTTP/1.1" 200 11855
+ERROR 2020-06-10 14:47:10,661 log 228 Internal Server Error: /write/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 27, in get
+    return render(reuqest, 'write_blog.html', context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' type in types' from 'for type in types'
+ERROR 2020-06-10 14:47:10,664 basehttp 154 "GET /write/ HTTP/1.1" 500 158941
+INFO 2020-06-10 14:47:45,688 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 14:47:46,870 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 14:49:07,533 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 14:49:08,406 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 14:49:53,408 basehttp 154 "GET /write/ HTTP/1.1" 200 5756
+WARNING 2020-06-10 14:49:53,596 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:49:53,597 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:49:53,615 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:49:53,616 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:49:53,617 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+WARNING 2020-06-10 14:49:53,617 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+INFO 2020-06-10 14:53:14,976 basehttp 154 "GET /write/ HTTP/1.1" 200 5503
+WARNING 2020-06-10 14:53:15,104 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:53:15,105 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:53:15,122 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:53:15,123 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:53:15,124 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+WARNING 2020-06-10 14:53:15,124 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+INFO 2020-06-10 14:53:15,774 basehttp 154 "GET /write/ HTTP/1.1" 200 5503
+WARNING 2020-06-10 14:53:15,881 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:53:15,883 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:53:15,904 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:53:15,905 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:53:15,906 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+WARNING 2020-06-10 14:53:15,906 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+INFO 2020-06-10 14:53:16,332 basehttp 154 "GET /write/ HTTP/1.1" 200 5503
+WARNING 2020-06-10 14:53:16,429 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:53:16,431 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:53:16,452 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:53:16,455 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:53:16,456 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+WARNING 2020-06-10 14:53:16,458 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+INFO 2020-06-10 14:53:16,537 basehttp 154 "GET /write/ HTTP/1.1" 200 5503
+WARNING 2020-06-10 14:53:16,621 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:53:16,622 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:53:16,637 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:53:16,638 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:53:16,639 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+WARNING 2020-06-10 14:53:16,640 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+INFO 2020-06-10 14:53:16,691 basehttp 154 "GET /write/ HTTP/1.1" 200 5503
+WARNING 2020-06-10 14:53:16,778 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:53:16,781 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:53:16,794 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:53:16,798 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:53:16,801 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+WARNING 2020-06-10 14:53:16,801 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+INFO 2020-06-10 14:53:16,859 basehttp 154 "GET /write/ HTTP/1.1" 200 5503
+WARNING 2020-06-10 14:53:16,959 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:53:16,960 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:53:16,977 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:53:16,981 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+WARNING 2020-06-10 14:53:16,985 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:53:16,986 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+INFO 2020-06-10 14:53:17,056 basehttp 154 "GET /write/ HTTP/1.1" 200 5503
+WARNING 2020-06-10 14:53:17,157 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:53:17,158 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:53:17,183 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:53:17,186 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:53:17,187 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+WARNING 2020-06-10 14:53:17,187 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+INFO 2020-06-10 14:53:17,251 basehttp 154 "GET /write/ HTTP/1.1" 200 5503
+WARNING 2020-06-10 14:53:17,368 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:53:17,368 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:53:17,386 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:53:17,387 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:53:17,388 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+WARNING 2020-06-10 14:53:17,388 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+INFO 2020-06-10 14:53:17,455 basehttp 154 "GET /write/ HTTP/1.1" 200 5503
+WARNING 2020-06-10 14:53:17,542 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:53:17,542 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:53:17,559 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:53:17,562 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+WARNING 2020-06-10 14:53:17,566 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:53:17,567 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+INFO 2020-06-10 14:53:17,877 basehttp 154 "GET /write/ HTTP/1.1" 200 5503
+WARNING 2020-06-10 14:53:17,984 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:53:17,985 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:53:18,002 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:53:18,004 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:53:18,004 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+WARNING 2020-06-10 14:53:18,005 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+INFO 2020-06-10 14:53:18,609 basehttp 154 "GET /write/ HTTP/1.1" 200 5503
+WARNING 2020-06-10 14:53:18,723 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:53:18,723 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:53:18,742 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:53:18,747 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:53:18,748 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+WARNING 2020-06-10 14:53:18,749 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+INFO 2020-06-10 14:54:37,190 basehttp 154 "GET /write/ HTTP/1.1" 200 5518
+WARNING 2020-06-10 14:54:37,516 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:54:37,517 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:54:37,539 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:54:37,542 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:54:37,544 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+WARNING 2020-06-10 14:54:37,545 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+INFO 2020-06-10 14:54:38,385 basehttp 154 "GET /write/ HTTP/1.1" 200 5518
+WARNING 2020-06-10 14:54:38,539 log 228 Not Found: /write/ckeditor/ckeditor/config.js
+WARNING 2020-06-10 14:54:38,540 basehttp 154 "GET /write/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 404 2544
+WARNING 2020-06-10 14:54:38,563 log 228 Not Found: /write/ckeditor/ckeditor/skins/moono-lisa/editor.css
+WARNING 2020-06-10 14:54:38,564 log 228 Not Found: /write/ckeditor/ckeditor/lang/zh-cn.js
+WARNING 2020-06-10 14:54:38,565 basehttp 154 "GET /write/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 404 2598
+WARNING 2020-06-10 14:54:38,565 basehttp 154 "GET /write/ckeditor/ckeditor/lang/zh-cn.js?t=I3I8 HTTP/1.1" 404 2556
+ERROR 2020-06-10 15:10:37,042 log 228 Internal Server Error: /write/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\urls\base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'users'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 27, in get
+    return render(reuqests, 'write_blog.html', context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\urls\base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'users' is not a registered namespace
+ERROR 2020-06-10 15:10:37,044 basehttp 154 "GET /write/ HTTP/1.1" 500 140022
+ERROR 2020-06-10 15:11:35,065 log 228 Internal Server Error: /write/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\urls\base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'users'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 27, in get
+    return render(reuqests, 'write_blog.html', context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\urls\base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'users' is not a registered namespace
+ERROR 2020-06-10 15:11:35,068 basehttp 154 "GET /write/ HTTP/1.1" 500 140024
+ERROR 2020-06-10 15:11:58,968 log 228 Internal Server Error: /write/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 27, in get
+    return render(reuqests, 'write_blog.html', context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'writeblog' not found. 'writeblog' is not a valid view function or pattern name.
+ERROR 2020-06-10 15:11:58,970 basehttp 154 "GET /write/ HTTP/1.1" 500 138806
+INFO 2020-06-10 15:14:19,718 basehttp 154 "GET /write/ HTTP/1.1" 200 5229
+INFO 2020-06-10 15:14:42,208 basehttp 154 "GET /write/ HTTP/1.1" 200 5316
+INFO 2020-06-10 15:19:10,757 autoreload 203 D:\python_pycharm\blog\blog\settings.py changed, reloading.
+INFO 2020-06-10 15:19:11,753 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-06-10 15:19:57,500 log 228 Bad Request: /write/
+WARNING 2020-06-10 15:19:57,501 basehttp 154 "POST /write/ HTTP/1.1" 400 12
+INFO 2020-06-10 15:21:00,535 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 15:21:01,454 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-06-10 15:21:01,916 log 228 Bad Request: /write/
+WARNING 2020-06-10 15:21:01,917 basehttp 154 "POST /write/ HTTP/1.1" 400 12
+INFO 2020-06-10 15:22:10,699 autoreload 203 D:\python_pycharm\blog\home\models.py changed, reloading.
+INFO 2020-06-10 15:22:11,542 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 15:22:27,812 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-06-10 15:22:32,239 log 228 Bad Request: /write/
+WARNING 2020-06-10 15:22:32,239 basehttp 154 "POST /write/ HTTP/1.1" 400 12
+INFO 2020-06-10 15:22:37,851 basehttp 154 "GET /write/ HTTP/1.1" 200 5316
+WARNING 2020-06-10 15:23:20,006 log 228 Bad Request: /write/
+WARNING 2020-06-10 15:23:20,007 basehttp 154 "POST /write/ HTTP/1.1" 400 12
+WARNING 2020-06-10 15:24:03,172 log 228 Bad Request: /write/
+WARNING 2020-06-10 15:24:03,173 basehttp 154 "POST /write/ HTTP/1.1" 400 12
+WARNING 2020-06-10 15:24:05,483 log 228 Bad Request: /write/
+WARNING 2020-06-10 15:24:05,484 basehttp 154 "POST /write/ HTTP/1.1" 400 12
+INFO 2020-06-10 15:24:09,638 basehttp 154 "GET /write/ HTTP/1.1" 200 5318
+INFO 2020-06-10 15:24:18,126 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 15:24:20,424 basehttp 154 "GET /write/ HTTP/1.1" 200 5318
+INFO 2020-06-10 15:24:21,142 basehttp 154 "GET /write/ HTTP/1.1" 200 5318
+INFO 2020-06-10 15:24:21,314 basehttp 154 "GET /write/ HTTP/1.1" 200 5318
+INFO 2020-06-10 15:24:21,492 basehttp 154 "GET /write/ HTTP/1.1" 200 5318
+ERROR 2020-06-10 15:24:39,389 views 51 Cannot assign "'1'": "Article.category" must be a "ArticleCategory" instance.
+WARNING 2020-06-10 15:24:39,390 log 228 Bad Request: /write/
+WARNING 2020-06-10 15:24:39,391 basehttp 154 "POST /write/ HTTP/1.1" 400 12
+INFO 2020-06-10 15:30:02,012 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-10 15:30:02,982 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 15:30:11,588 basehttp 154 "GET /login/ HTTP/1.1" 200 3067
+INFO 2020-06-10 15:30:11,637 basehttp 154 "GET /static/js/login.js HTTP/1.1" 200 677
+INFO 2020-06-10 15:32:45,969 basehttp 154 "GET /login/ HTTP/1.1" 200 3068
+INFO 2020-06-10 15:37:30,338 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-10 15:37:31,346 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 15:38:39,075 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-10 15:38:39,898 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 15:42:39,428 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-06-10 15:42:52,095 log 228 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2020-06-10 15:42:52,096 basehttp 154 "POST /login/ HTTP/1.1" 403 2508
+WARNING 2020-06-10 15:44:42,909 log 228 Not Found: /login/register.html
+WARNING 2020-06-10 15:44:42,910 basehttp 154 "GET /login/register.html HTTP/1.1" 404 2662
+INFO 2020-06-10 15:45:04,749 basehttp 154 "GET /login/ HTTP/1.1" 200 3204
+INFO 2020-06-10 15:45:05,938 basehttp 154 "GET /register/ HTTP/1.1" 200 3697
+INFO 2020-06-10 15:50:17,035 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-10 15:50:18,199 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 15:57:36,769 basehttp 154 "GET /login/ HTTP/1.1" 200 3205
+INFO 2020-06-10 15:57:49,502 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-06-10 15:57:49,508 basehttp 154 "GET / HTTP/1.1" 200 11855
+INFO 2020-06-10 15:57:54,025 basehttp 154 "GET /login/ HTTP/1.1" 200 3205
+INFO 2020-06-10 15:58:07,033 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-06-10 15:58:07,039 basehttp 154 "GET / HTTP/1.1" 200 11855
+INFO 2020-06-10 16:02:34,029 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 16:02:34,917 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 16:02:35,718 basehttp 154 "GET /login/ HTTP/1.1" 200 3205
+ERROR 2020-06-10 16:02:40,736 log 228 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view user.views.LoginView didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-06-10 16:02:40,737 basehttp 154 "POST /login/ HTTP/1.1" 500 62330
+INFO 2020-06-10 16:03:04,922 basehttp 154 "GET /login/ HTTP/1.1" 200 3205
+ERROR 2020-06-10 16:03:12,660 log 228 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view user.views.LoginView didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-06-10 16:03:12,662 basehttp 154 "POST /login/ HTTP/1.1" 500 62330
+INFO 2020-06-10 16:04:09,329 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-10 16:04:10,281 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 16:04:10,523 basehttp 154 "GET /login/ HTTP/1.1" 200 3205
+INFO 2020-06-10 16:04:14,327 basehttp 154 "POST /login/ HTTP/1.1" 200 11257
+WARNING 2020-06-10 16:05:52,760 log 228 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2020-06-10 16:05:52,761 basehttp 154 "POST /login/ HTTP/1.1" 403 2508
+INFO 2020-06-10 16:05:53,031 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 16:05:53,796 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 16:05:57,367 basehttp 154 "GET /login/ HTTP/1.1" 200 3205
+INFO 2020-06-10 16:06:04,846 basehttp 154 "POST /login/ HTTP/1.1" 200 11257
+INFO 2020-06-10 16:07:13,867 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-10 16:07:14,757 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 16:07:15,006 basehttp 154 "GET /login/ HTTP/1.1" 200 3205
+INFO 2020-06-10 16:07:18,235 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-06-10 16:07:18,268 basehttp 154 "GET / HTTP/1.1" 200 11609
+WARNING 2020-06-10 16:09:07,260 log 228 Not Found: /write_blog.html
+WARNING 2020-06-10 16:09:07,261 basehttp 154 "GET /write_blog.html HTTP/1.1" 404 2650
+INFO 2020-06-10 16:09:07,796 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 16:09:08,553 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-06-10 16:09:45,204 log 228 Not Found: /write_blog.html
+WARNING 2020-06-10 16:09:45,204 basehttp 154 "GET /write_blog.html HTTP/1.1" 404 2650
+INFO 2020-06-10 16:10:19,357 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 16:10:20,636 basehttp 154 "GET / HTTP/1.1" 200 11602
+INFO 2020-06-10 16:10:24,042 basehttp 154 "GET /write/ HTTP/1.1" 200 5324
+ERROR 2020-06-10 16:11:33,114 views 58 Cannot assign "'1'": "Article.category" must be a "ArticleCategory" instance.
+WARNING 2020-06-10 16:11:33,115 log 228 Bad Request: /write/
+WARNING 2020-06-10 16:11:33,116 basehttp 154 "POST /write/ HTTP/1.1" 400 12
+INFO 2020-06-10 16:13:25,552 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 16:13:26,493 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-10 16:13:27,573 log 228 Internal Server Error: /write/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 61, in post
+    return render(reverse('home:index'))
+TypeError: render() missing 1 required positional argument: 'template_name'
+ERROR 2020-06-10 16:13:27,575 basehttp 154 "POST /write/ HTTP/1.1" 500 82092
+INFO 2020-06-10 16:15:35,627 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 16:15:36,614 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 16:15:37,025 basehttp 154 "POST /write/ HTTP/1.1" 302 0
+INFO 2020-06-10 16:15:37,045 basehttp 154 "GET / HTTP/1.1" 200 11602
+INFO 2020-06-10 16:20:11,711 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 16:20:12,548 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 16:24:00,292 basehttp 154 "GET / HTTP/1.1" 200 6172
+ERROR 2020-06-10 16:24:45,932 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'article.avatar.url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 21, in get
+    return render(request, 'index.html', context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\defaulttags.py", line 811, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 72: 'article.avatar.url', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2020-06-10 16:24:45,936 basehttp 154 "GET / HTTP/1.1" 500 171404
+INFO 2020-06-10 16:25:02,228 basehttp 154 "GET / HTTP/1.1" 200 6258
+WARNING 2020-06-10 16:25:02,286 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 16:25:02,288 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 16:25:02,289 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2794
+WARNING 2020-06-10 16:25:02,289 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2770
+WARNING 2020-06-10 16:25:02,422 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 16:25:02,424 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 16:25:02,426 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2794
+WARNING 2020-06-10 16:25:02,429 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2770
+INFO 2020-06-10 16:36:27,758 basehttp 154 "GET / HTTP/1.1" 200 6145
+WARNING 2020-06-10 16:36:27,802 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 16:36:27,804 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 16:36:27,805 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2794
+WARNING 2020-06-10 16:36:27,805 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2770
+WARNING 2020-06-10 16:36:27,901 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 16:36:27,905 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2794
+WARNING 2020-06-10 16:36:27,904 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 16:36:27,914 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2770
+ERROR 2020-06-10 16:53:34,973 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 21, in get
+    'user': user,
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\defaulttags.py", line 811, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 43: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2020-06-10 16:53:34,976 basehttp 154 "GET / HTTP/1.1" 500 171683
+INFO 2020-06-10 16:53:35,032 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 16:53:36,024 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 16:54:13,502 basehttp 154 "GET / HTTP/1.1" 200 6289
+WARNING 2020-06-10 16:54:13,557 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 16:54:13,559 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 16:54:13,562 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2770
+WARNING 2020-06-10 16:54:13,563 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2794
+WARNING 2020-06-10 16:54:13,691 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 16:54:13,696 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 16:54:13,697 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2794
+WARNING 2020-06-10 16:54:13,700 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2770
+ERROR 2020-06-10 16:54:15,582 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 16, in get
+    type = ArticleCategory.objects.get(id=type_id)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\query.py", line 399, in get
+    clone = self.filter(*args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\fields\__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2020-06-10 16:54:15,587 basehttp 154 "GET /?type_id= HTTP/1.1" 500 132206
+ERROR 2020-06-10 16:54:19,078 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 16, in get
+    type = ArticleCategory.objects.get(id=type_id)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\query.py", line 399, in get
+    clone = self.filter(*args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\fields\__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2020-06-10 16:54:19,079 basehttp 154 "GET /?type_id= HTTP/1.1" 500 132206
+ERROR 2020-06-10 16:56:56,218 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 16, in get
+    type = ArticleCategory.objects.get(id=type_id)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\query.py", line 399, in get
+    clone = self.filter(*args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\sql\query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\db\models\fields\__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2020-06-10 16:56:56,221 basehttp 154 "GET /?type_id= HTTP/1.1" 500 132206
+INFO 2020-06-10 16:57:04,765 basehttp 154 "GET / HTTP/1.1" 200 6291
+WARNING 2020-06-10 16:57:04,802 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 16:57:04,804 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 16:57:04,804 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2794
+WARNING 2020-06-10 16:57:04,804 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2770
+WARNING 2020-06-10 16:57:04,846 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 16:57:04,852 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2794
+INFO 2020-06-10 16:57:05,955 basehttp 154 "GET /?type_id=2 HTTP/1.1" 200 6291
+WARNING 2020-06-10 16:57:05,989 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 16:57:05,991 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 16:57:05,992 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2794
+WARNING 2020-06-10 16:57:05,995 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2770
+INFO 2020-06-10 16:57:08,020 basehttp 154 "GET /?type_id=1 HTTP/1.1" 200 6291
+WARNING 2020-06-10 16:57:08,052 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 16:57:08,053 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2794
+WARNING 2020-06-10 16:57:08,056 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 16:57:08,057 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2770
+WARNING 2020-06-10 16:57:08,088 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 16:57:08,089 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2794
+INFO 2020-06-10 17:07:59,954 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 17:08:00,820 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 17:26:50,576 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 17:26:54,857 basehttp 154 "GET / HTTP/1.1" 200 6289
+WARNING 2020-06-10 17:26:54,919 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:26:54,922 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:26:54,923 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:26:54,923 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+WARNING 2020-06-10 17:26:55,105 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:26:55,111 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:26:55,113 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+WARNING 2020-06-10 17:26:55,116 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+INFO 2020-06-10 17:27:02,331 basehttp 154 "GET / HTTP/1.1" 200 6289
+WARNING 2020-06-10 17:27:02,383 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:27:02,385 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:27:02,388 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:27:02,390 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+WARNING 2020-06-10 17:27:02,454 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:27:02,457 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:27:02,462 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:27:02,463 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+INFO 2020-06-10 17:27:34,535 basehttp 154 "GET / HTTP/1.1" 200 6289
+WARNING 2020-06-10 17:27:34,580 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:27:34,582 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:27:34,583 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:27:34,584 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+WARNING 2020-06-10 17:27:34,651 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:27:34,655 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:27:34,656 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+WARNING 2020-06-10 17:27:34,656 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+INFO 2020-06-10 17:28:43,710 basehttp 154 "GET / HTTP/1.1" 200 6271
+WARNING 2020-06-10 17:28:43,744 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:28:43,746 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:28:43,747 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+WARNING 2020-06-10 17:28:43,747 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:28:43,809 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:28:43,813 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:28:43,813 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:28:43,814 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+INFO 2020-06-10 17:31:07,200 basehttp 154 "GET /write/ HTTP/1.1" 200 5324
+INFO 2020-06-10 17:31:40,769 basehttp 154 "POST /write/ HTTP/1.1" 302 0
+INFO 2020-06-10 17:31:40,823 basehttp 154 "GET / HTTP/1.1" 200 7457
+WARNING 2020-06-10 17:31:40,875 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:31:40,879 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:31:40,880 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:31:40,880 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:31:40,900 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:31:40,901 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+WARNING 2020-06-10 17:31:40,958 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:31:40,958 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:31:40,963 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:31:40,964 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+INFO 2020-06-10 17:33:52,993 basehttp 154 "GET /write/ HTTP/1.1" 200 5324
+INFO 2020-06-10 17:34:13,051 basehttp 154 "POST /write/ HTTP/1.1" 302 0
+INFO 2020-06-10 17:34:13,078 basehttp 154 "GET / HTTP/1.1" 200 8643
+WARNING 2020-06-10 17:34:13,124 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:34:13,128 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:34:13,129 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:34:13,132 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:34:13,164 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:34:13,165 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:34:13,166 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+WARNING 2020-06-10 17:34:13,166 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:34:13,241 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:34:13,246 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:34:13,248 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:34:13,254 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 2962
+INFO 2020-06-10 17:36:23,355 basehttp 154 "GET / HTTP/1.1" 200 8643
+WARNING 2020-06-10 17:36:23,404 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:36:23,406 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:36:23,407 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:36:23,410 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:36:23,484 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:36:23,486 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:36:23,486 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:36:23,487 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+WARNING 2020-06-10 17:36:23,564 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:36:23,566 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:36:23,567 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:36:23,567 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 2962
+INFO 2020-06-10 17:37:37,260 basehttp 154 "GET /?type_id=2 HTTP/1.1" 200 8643
+WARNING 2020-06-10 17:37:37,295 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:37:37,300 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:37:37,300 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:37:37,301 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:37:37,318 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:37:37,321 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:37:37,322 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:37:37,322 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+WARNING 2020-06-10 17:37:37,390 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:37:37,392 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:37:37,394 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:37:37,398 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:37:37,399 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:37:37,400 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+INFO 2020-06-10 17:37:39,800 basehttp 154 "GET /?type_id=1 HTTP/1.1" 200 8643
+WARNING 2020-06-10 17:37:39,837 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:37:39,838 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:37:39,841 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:37:39,843 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:37:39,864 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:37:39,867 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:37:39,868 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:37:39,868 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+WARNING 2020-06-10 17:37:39,900 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:37:39,903 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 2962
+INFO 2020-06-10 17:37:40,895 basehttp 154 "GET /?type_id=1 HTTP/1.1" 200 8643
+WARNING 2020-06-10 17:37:40,923 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:37:40,924 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:37:40,928 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:37:40,931 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:37:40,941 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:37:40,943 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:37:40,944 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:37:40,945 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+WARNING 2020-06-10 17:37:40,972 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:37:40,973 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 2962
+INFO 2020-06-10 17:38:31,812 basehttp 154 "GET /?type_id=1 HTTP/1.1" 200 8687
+WARNING 2020-06-10 17:38:31,862 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:38:31,864 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:38:31,871 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:38:31,878 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:38:31,885 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:38:31,887 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:38:31,888 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:38:31,889 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+WARNING 2020-06-10 17:38:31,926 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:38:31,927 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 2962
+ERROR 2020-06-10 17:38:33,517 log 228 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\urls\base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'users'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 118, in get
+    return render(request, 'detail.html', context=context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\urls\base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'users' is not a registered namespace
+ERROR 2020-06-10 17:38:33,520 basehttp 154 "GET /index/?id=4 HTTP/1.1" 500 147507
+ERROR 2020-06-10 17:39:53,694 log 228 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 118, in get
+    return render(request, 'detail.html', context=context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'writeblog' not found. 'writeblog' is not a valid view function or pattern name.
+ERROR 2020-06-10 17:39:53,697 basehttp 154 "GET /index/?id=4 HTTP/1.1" 500 146289
+ERROR 2020-06-10 17:40:21,773 log 228 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 118, in get
+    return render(request, 'detail.html', context=context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'write' not found. 'write' is not a valid view function or pattern name.
+ERROR 2020-06-10 17:40:21,776 basehttp 154 "GET /index/?id=4 HTTP/1.1" 500 145908
+ERROR 2020-06-10 17:40:52,123 log 228 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\urls\base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'users'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 118, in get
+    return render(request, 'detail.html', context=context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\urls\base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'users' is not a registered namespace
+ERROR 2020-06-10 17:40:52,125 basehttp 154 "GET /index/?id=4 HTTP/1.1" 500 146974
+INFO 2020-06-10 17:41:09,165 basehttp 154 "GET /index/?id=4 HTTP/1.1" 200 6718
+INFO 2020-06-10 17:41:09,268 basehttp 154 "GET /static/js/detail.js HTTP/1.1" 200 1294
+INFO 2020-06-10 17:41:09,276 basehttp 154 "GET /static/prism/prism.css HTTP/1.1" 200 4033
+INFO 2020-06-10 17:41:09,324 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 200 99487
+INFO 2020-06-10 17:41:09,566 basehttp 154 "GET /static/ckeditor/ckeditor/config.js?t=I3I8 HTTP/1.1" 200 338
+INFO 2020-06-10 17:41:09,601 basehttp 154 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=I3I8 HTTP/1.1" 200 46921
+INFO 2020-06-10 17:41:09,623 basehttp 154 "GET /static/ckeditor/ckeditor/lang/en.js?t=I3I8 HTTP/1.1" 200 19035
+INFO 2020-06-10 17:41:09,665 basehttp 154 "GET /static/ckeditor/ckeditor/styles.js?t=I3I8 HTTP/1.1" 200 5583
+INFO 2020-06-10 17:41:09,689 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/plugin.js?t=I3I8 HTTP/1.1" 200 4333
+INFO 2020-06-10 17:41:09,713 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/codesnippet/plugin.js?t=I3I8 HTTP/1.1" 200 3824
+INFO 2020-06-10 17:41:09,735 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css HTTP/1.1" 200 419
+INFO 2020-06-10 17:41:09,735 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css HTTP/1.1" 200 381
+INFO 2020-06-10 17:41:09,742 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css HTTP/1.1" 200 1306
+INFO 2020-06-10 17:41:09,750 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1082
+INFO 2020-06-10 17:41:09,750 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/codesnippet/lang/en.js?t=I3I8 HTTP/1.1" 200 369
+INFO 2020-06-10 17:41:09,780 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+INFO 2020-06-10 17:41:09,804 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/codesnippet/icons/codesnippet.png?t=I3I8 HTTP/1.1" 200 597
+INFO 2020-06-10 17:41:09,814 basehttp 154 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=95e5d83 HTTP/1.1" 200 12421
+INFO 2020-06-10 17:41:09,840 basehttp 154 "GET /static/ckeditor/ckeditor/contents.css?t=I3I8 HTTP/1.1" 200 2954
+INFO 2020-06-10 17:41:09,841 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css HTTP/1.1" 200 2063
+INFO 2020-06-10 17:41:19,568 basehttp 154 "POST /index/?id=4 HTTP/1.1" 302 0
+INFO 2020-06-10 17:41:19,696 basehttp 154 "GET /index/?id=4 HTTP/1.1" 200 7171
+INFO 2020-06-10 17:42:22,893 basehttp 154 "GET /index/?id=4 HTTP/1.1" 200 7172
+INFO 2020-06-10 17:42:26,959 basehttp 154 "GET /index/?id=3 HTTP/1.1" 200 6719
+INFO 2020-06-10 17:42:30,759 basehttp 154 "GET /?type_id=1 HTTP/1.1" 200 8687
+WARNING 2020-06-10 17:42:30,799 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:42:30,802 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:42:30,811 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:42:30,811 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 2962
+WARNING 2020-06-10 17:42:30,816 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:42:30,817 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 2938
+WARNING 2020-06-10 17:42:30,822 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:42:30,824 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 2962
+INFO 2020-06-10 17:42:36,110 basehttp 154 "GET /index/?id=4 HTTP/1.1" 200 7172
+INFO 2020-06-10 17:43:18,229 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 17:43:19,113 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 17:43:19,573 basehttp 154 "GET /index/?id=4 HTTP/1.1" 200 7172
+INFO 2020-06-10 17:43:53,018 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 17:43:53,885 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 17:43:54,586 basehttp 154 "GET /index/?id=4 HTTP/1.1" 200 7173
+INFO 2020-06-10 17:44:10,978 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 17:44:11,948 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-06-10 17:44:12,479 log 228 Internal Server Error: /index/
+Traceback (most recent call last):
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\LeafTalk\Envs\py3_django\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_pycharm\blog\home\views.py", line 88, in get
+    print(hot_articles.id)
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2020-06-10 17:44:12,481 basehttp 154 "GET /index/?id=4 HTTP/1.1" 500 80609
+INFO 2020-06-10 17:44:41,724 autoreload 203 D:\python_pycharm\blog\home\views.py changed, reloading.
+INFO 2020-06-10 17:44:42,619 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 17:44:43,264 basehttp 154 "GET /index/?id=4 HTTP/1.1" 200 7173
+INFO 2020-06-10 17:46:48,292 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-10 17:46:49,177 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 17:48:48,449 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 17:48:48,926 basehttp 154 "GET /index/?id=4 HTTP/1.1" 200 7109
+INFO 2020-06-10 17:48:52,014 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-06-10 17:48:52,034 basehttp 154 "GET / HTTP/1.1" 200 8611
+WARNING 2020-06-10 17:48:52,081 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:48:52,084 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:48:52,085 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:48:52,086 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:48:52,111 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:48:52,114 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:48:52,115 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:48:52,116 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 17:48:52,186 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:48:52,189 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:48:52,192 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:48:52,192 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:48:52,195 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:48:52,195 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:48:52,201 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:48:52,209 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+INFO 2020-06-10 17:49:16,555 basehttp 154 "GET /index/?id=4 HTTP/1.1" 200 7109
+INFO 2020-06-10 17:49:20,133 basehttp 154 "GET /login/ HTTP/1.1" 200 3205
+INFO 2020-06-10 17:49:22,471 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-06-10 17:49:22,530 basehttp 154 "GET / HTTP/1.1" 200 8622
+WARNING 2020-06-10 17:49:22,588 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:49:22,591 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:49:22,592 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:49:22,592 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:49:22,609 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:49:22,613 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:49:22,616 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:49:22,616 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 17:49:22,668 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:49:22,669 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:49:22,675 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:49:22,679 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+INFO 2020-06-10 17:52:22,095 basehttp 154 "GET / HTTP/1.1" 200 8181
+WARNING 2020-06-10 17:52:22,147 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:52:22,149 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:52:22,150 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:52:22,150 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:52:22,202 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:52:22,204 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:52:22,205 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 17:52:22,205 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:52:22,247 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:52:22,250 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:52:22,251 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:52:22,251 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+INFO 2020-06-10 17:53:42,674 basehttp 154 "GET / HTTP/1.1" 200 8685
+WARNING 2020-06-10 17:53:42,717 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:53:42,721 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:53:42,722 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:53:42,723 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:53:42,773 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:53:42,775 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:53:42,779 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:53:42,780 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 17:53:42,818 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:53:42,822 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:53:42,823 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:53:42,824 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:53:45,200 log 228 Not Found: /{% url 'user:logout' %
+WARNING 2020-06-10 17:53:45,203 basehttp 154 "GET /%7B%%20url%20'user:logout'%20% HTTP/1.1" 404 3044
+INFO 2020-06-10 17:54:32,617 autoreload 203 D:\python_pycharm\blog\user\views.py changed, reloading.
+INFO 2020-06-10 17:54:33,452 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-06-10 17:54:33,779 log 228 Not Found: /{% url 'user:logout' %
+WARNING 2020-06-10 17:54:33,780 basehttp 154 "GET /%7B%%20url%20'user:logout'%20% HTTP/1.1" 404 3044
+INFO 2020-06-10 17:55:29,953 basehttp 154 "GET / HTTP/1.1" 200 8685
+WARNING 2020-06-10 17:55:30,008 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:55:30,018 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:55:30,022 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:55:30,023 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:55:30,068 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:55:30,072 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:55:30,073 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:55:30,073 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 17:55:30,138 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:55:30,142 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:55:30,147 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:55:30,147 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:55:30,150 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:55:30,154 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:55:30,155 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 17:55:30,156 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+INFO 2020-06-10 17:55:32,487 basehttp 154 "GET /write/ HTTP/1.1" 200 5274
+WARNING 2020-06-10 17:55:37,239 log 228 Not Found: /{% url 'user:logout' %
+WARNING 2020-06-10 17:55:37,240 basehttp 154 "GET /%7B%%20url%20'user:logout'%20% HTTP/1.1" 404 3044
+WARNING 2020-06-10 17:57:02,042 log 228 Not Found: /{% url 'user:logout' %
+WARNING 2020-06-10 17:57:02,043 basehttp 154 "GET /%7B%%20url%20'user:logout'%20% HTTP/1.1" 404 3044
+WARNING 2020-06-10 17:57:05,334 log 228 Not Found: /{% url 'user:logout' %
+WARNING 2020-06-10 17:57:05,335 basehttp 154 "GET /%7B%%20url%20'user:logout'%20% HTTP/1.1" 404 3044
+INFO 2020-06-10 17:57:10,017 basehttp 154 "GET / HTTP/1.1" 200 8622
+WARNING 2020-06-10 17:57:10,053 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:57:10,059 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:57:10,060 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:10,068 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:10,075 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:57:10,077 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:57:10,078 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 17:57:10,078 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+INFO 2020-06-10 17:57:10,725 basehttp 154 "GET / HTTP/1.1" 200 8622
+WARNING 2020-06-10 17:57:10,760 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:57:10,762 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:57:10,762 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:10,763 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:10,778 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:57:10,779 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 17:57:10,781 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:57:10,783 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+INFO 2020-06-10 17:57:10,885 basehttp 154 "GET / HTTP/1.1" 200 8622
+WARNING 2020-06-10 17:57:10,919 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:57:10,926 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:57:10,927 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:10,928 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:10,940 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:57:10,942 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:57:10,943 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:10,943 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+INFO 2020-06-10 17:57:11,052 basehttp 154 "GET / HTTP/1.1" 200 8622
+WARNING 2020-06-10 17:57:11,091 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:57:11,096 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:11,095 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:57:11,099 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:11,112 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:57:11,114 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:57:11,114 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:11,115 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+INFO 2020-06-10 17:57:11,201 basehttp 154 "GET / HTTP/1.1" 200 8622
+WARNING 2020-06-10 17:57:11,243 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:57:11,244 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:11,247 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:57:11,256 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:11,261 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:57:11,262 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:11,265 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:57:11,268 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 17:57:11,306 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:57:11,307 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+INFO 2020-06-10 17:57:11,378 basehttp 154 "GET / HTTP/1.1" 200 8622
+WARNING 2020-06-10 17:57:11,417 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:57:11,421 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:57:11,424 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:11,432 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:11,442 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:57:11,445 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:57:11,446 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:11,446 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 17:57:12,650 log 228 Not Found: /{% url 'user:logout' %
+WARNING 2020-06-10 17:57:12,650 basehttp 154 "GET /%7B%%20url%20'user:logout'%20% HTTP/1.1" 404 3044
+INFO 2020-06-10 17:57:21,585 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-06-10 17:57:25,143 basehttp 154 "GET /index/?id=4 HTTP/1.1" 200 7109
+INFO 2020-06-10 17:57:27,482 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-06-10 17:57:27,501 basehttp 154 "GET / HTTP/1.1" 200 8611
+WARNING 2020-06-10 17:57:27,550 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:57:27,552 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:57:27,556 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:27,562 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:57:27,568 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:57:27,569 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:57:27,570 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 17:57:27,570 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:58:42,961 log 228 Not Found: /{% url 'user:logout' %
+WARNING 2020-06-10 17:58:42,962 basehttp 154 "GET /%7B%%20url%20'user:logout'%20% HTTP/1.1" 404 3044
+INFO 2020-06-10 17:59:34,535 basehttp 154 "GET / HTTP/1.1" 200 8597
+WARNING 2020-06-10 17:59:34,572 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:59:34,574 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 17:59:34,575 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:59:34,575 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:59:34,592 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 17:59:34,594 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 17:59:34,596 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 17:59:34,597 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 17:59:34,634 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 17:59:34,635 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+INFO 2020-06-10 18:00:26,557 basehttp 154 "GET / HTTP/1.1" 200 8466
+WARNING 2020-06-10 18:00:26,587 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 18:00:26,593 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 18:00:26,595 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 18:00:26,606 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 18:00:26,610 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 18:00:26,614 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 18:00:26,616 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 18:00:26,619 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+INFO 2020-06-10 18:00:29,010 basehttp 154 "GET /login/ HTTP/1.1" 200 3205
+INFO 2020-06-10 18:00:30,978 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-06-10 18:00:31,028 basehttp 154 "GET / HTTP/1.1" 200 8477
+WARNING 2020-06-10 18:00:31,076 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 18:00:31,077 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 18:00:31,085 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 18:00:31,087 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 18:00:31,099 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 18:00:31,102 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 18:00:31,103 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 18:00:31,103 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 18:00:31,132 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 18:00:31,133 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+INFO 2020-06-10 18:00:37,098 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-06-10 18:00:37,118 basehttp 154 "GET / HTTP/1.1" 200 8466
+WARNING 2020-06-10 18:00:37,156 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 18:00:37,159 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 18:00:37,162 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 18:00:37,163 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 18:00:37,176 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 18:00:37,179 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 18:00:37,179 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 18:00:37,180 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 18:00:37,211 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 18:00:37,212 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+INFO 2020-06-10 18:00:39,652 basehttp 154 "GET /login/ HTTP/1.1" 200 3205
+INFO 2020-06-10 18:00:42,471 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-06-10 18:00:42,527 basehttp 154 "GET / HTTP/1.1" 200 8477
+WARNING 2020-06-10 18:00:42,574 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 18:00:42,575 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 18:00:42,580 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 18:00:42,584 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 18:00:42,593 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 18:00:42,595 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 18:00:42,596 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
+WARNING 2020-06-10 18:00:42,597 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+INFO 2020-06-10 18:00:44,822 basehttp 154 "GET /write/ HTTP/1.1" 200 5274
+INFO 2020-06-10 18:01:14,042 basehttp 154 "GET /index/?id=3 HTTP/1.1" 200 6655
+INFO 2020-06-10 18:01:18,463 basehttp 154 "GET /index/?id=2 HTTP/1.1" 200 6655
+INFO 2020-06-10 18:01:22,386 basehttp 154 "GET / HTTP/1.1" 200 8477
+WARNING 2020-06-10 18:01:22,421 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg
+WARNING 2020-06-10 18:01:22,424 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg
+WARNING 2020-06-10 18:01:22,424 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_Dv1UO0p.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 18:01:22,425 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_vVRilpU.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 18:01:22,441 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg
+WARNING 2020-06-10 18:01:22,443 log 228 Not Found: /media/article/20200610/u14378249731864478306fm26gp0.jpg
+WARNING 2020-06-10 18:01:22,445 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0_fIdA8od.jpg HTTP/1.1" 404 3131
+WARNING 2020-06-10 18:01:22,445 basehttp 154 "GET /media/article/20200610/u14378249731864478306fm26gp0.jpg HTTP/1.1" 404 3107
