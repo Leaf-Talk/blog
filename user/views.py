@@ -92,7 +92,7 @@ class LoginView(View):
 
 
 class LogoutView(View):
-
+       # ##
     def get(self, request):
         # 1.session数据清除
 
