@@ -205,5 +205,5 @@ LOGGING = {
 # 替换系统的user
 AUTH_USER_MODEL='user.User'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'

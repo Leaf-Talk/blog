@@ -14,7 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
+from django.views.static import serve
+from django.conf import settings
 from django.http import HttpResponse
 import logging
 
@@ -31,4 +33,5 @@ urlpatterns = [
     # path('', log),
     path('', include('user.urls', namespace='user')),
     path('', include('home.urls', namespace='home')),
+    re_path('media/(?P<path>.*)', serve, {'document_root': settings.MEDIA_ROOT}, name='media'),
 ]
